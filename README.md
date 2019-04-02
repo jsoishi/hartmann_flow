@@ -11,7 +11,7 @@ As is, the problem has four parameters, Ha, Re, Rm, and Pi:
  * Rm is the magnetic Reynolds number
  * Pi is the background pressure gradient in x that drives the channel flow.
 
-The problem is periodic in x and wall-bounded in y, with nx = ny = 64.
+The problem is periodic in x and wall-bounded in y, with nx = ny = 64. It starts with the background pressure gradient Pi=0, and all fields equal to zero. The background pressure gradient then ramps up to Pi with a time constant of tau = 1. By default, the script runs to time = 10.
 
 ## How to run
 0. `cd` to `hartmann_flow/python/` and make the `scratch` directory,
